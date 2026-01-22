@@ -3,7 +3,7 @@ pub fn error_log(message: &str) {
 }
 
 pub fn log_magenta(message: String) {
-  println!("\x1b[35m\n{}\n\x1b[0m", message);
+  println!("\x1b[35m\n{}\x1b[0m", message);
 }
 
 pub fn log_cyan(message: String) {

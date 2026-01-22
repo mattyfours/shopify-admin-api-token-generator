@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Deserialize, Serialize, Debug)]
 pub struct Store {
-  pub admin_api_access_token: String,
+  pub admin_api_access_token: Option<String>,
   pub store_name: String
 }
 

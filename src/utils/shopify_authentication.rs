@@ -24,10 +24,10 @@ pub fn get_code_from_oauth_url(
     encode(&redirect_url)
   );
 
-  log_white("Open OAuth URL In Browser:".to_string());
+  log_white("\nOpen OAuth URL In Browser:".to_string());
   log_cyan(format!("{}\n", oauth_url));
 
-  let inputed_code = Text::new("Insert value from the 'code' query parameter after authorizing the app")
+  let inputed_code = Text::new("Insert 'code' url parameter from redirected url:")
     .prompt()
     .unwrap();
 
@@ -71,7 +71,7 @@ pub async fn exchange_code_for_token(
       .as_str()
       .unwrap();
 
-    log_green(format!("Admin API Token: {:?}", access_token));
+    log_green(format!("Admin API Token: {:?}\n", access_token));
 
     Ok(access_token.to_string())
 }
