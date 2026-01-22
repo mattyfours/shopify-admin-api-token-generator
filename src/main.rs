@@ -33,7 +33,7 @@ async fn main() {
     .filter(|file_name| file_name.ends_with(".json"))
     .collect::<Vec<String>>();
 
-  let working_config_file_name: Result<String, InquireError> = Select::new("Select Config File", app_config_options)
+  let working_config_file_name: Result<String, InquireError> = Select::new("Select Config File:", app_config_options)
     .prompt();
 
   let working_config_file_path = format!("{}/{}", CONFIG_DIRECTORY, working_config_file_name.unwrap());
@@ -64,7 +64,7 @@ async fn main() {
     .filter(|name| !name.is_empty())
     .collect::<Vec<String>>();
 
-  let store_to_request: Result<String, InquireError> = Select::new("Select Store", store_options)
+  let store_to_request: Result<String, InquireError> = Select::new("Select Store:", store_options)
     .prompt();
 
   let store_my_shopify_url = format!(
