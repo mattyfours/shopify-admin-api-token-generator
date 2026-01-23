@@ -1,3 +1,7 @@
+## Description
+
+CLI tool to help generate Shopify Admin API Tokens using the "[Implement authorization code grant manually](https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens/authorization-code-grant)" flow.
+
 ## Getting started
 
 - [Install Rust](https://rust-lang.org/tools/install/)
