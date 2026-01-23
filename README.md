@@ -12,10 +12,10 @@ CLI tool to help generate Shopify Admin API Tokens using the "[Implement authori
 ## Configurations
 
 - Create a new app in your develop dashboard
-- Set the required permissions
+- Set the required permissions and release a version
 - Create a Custom Install Link and install the app on a shop
 - Open the project in a code editior
-- Create a new json file in the `app_configs` directory
+- Create a new JSON file in the `app_configs` directory
   - Example: `./app_configs/my-test-app`
   - This directly will NOT be uploaded to GitHub.
 
